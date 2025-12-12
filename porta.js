@@ -45,8 +45,6 @@ const translations = {
         footer_desc: "Actualmente cursando el final del Nivel 9. Estoy listo para iniciar mi <strong>Práctica Profesional (Nivel 10)</strong> en el próximo ciclo.",
         btn_cv: "Solicitar CV",
         footer_copy: "Diseñado por Justin Vargas Quirós • Estudiante UTN • 2025",
-
-        // TRADUCCIONES NUEVAS PARA BOTONES
         btn_demo: "Ver Demo",
         btn_code: "Ver Código"
     },
@@ -93,25 +91,18 @@ const translations = {
         footer_desc: "Currently finishing Level 9. I am ready to start my <strong>Professional Practice (Level 10)</strong> in the next cycle.",
         btn_cv: "Request CV",
         footer_copy: "Designed by Justin Vargas Quirós • UTN Student • 2025",
-
-        // TRADUCCIONES NUEVAS PARA BOTONES
         btn_demo: "Live Demo",
         btn_code: "View Code"
     }
 };
 
-// 2. Lógica de Cambio de Idioma (Switch Deslizante)
 let currentLang = 'es';
 const langToggle = document.getElementById('lang-toggle');
 const langOptions = document.querySelectorAll('.lang-option');
 
 langToggle.addEventListener('click', () => {
     currentLang = currentLang === 'es' ? 'en' : 'es';
-
-    // Animación del slider
     langToggle.classList.toggle('english-active');
-
-    // Actualizar color de texto activo
     langOptions.forEach(opt => {
         if (opt.dataset.lang === currentLang) {
             opt.classList.add('active');
@@ -119,7 +110,6 @@ langToggle.addEventListener('click', () => {
             opt.classList.remove('active');
         }
     });
-
     updateContent();
 });
 
@@ -134,13 +124,11 @@ function updateContent() {
     document.documentElement.lang = currentLang;
 }
 
-// 3. Lógica de Tema Claro/Oscuro
 const themeBtn = document.getElementById('theme-btn');
 const themeIcon = document.getElementById('theme-icon');
 
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
-
     if (document.body.classList.contains('light-mode')) {
         themeIcon.classList.remove('ri-sun-line');
         themeIcon.classList.add('ri-moon-line');
@@ -150,8 +138,6 @@ themeBtn.addEventListener('click', () => {
     }
 });
 
-
-// --- GSAP & Scroll (Lógica Original) ---
 const lenis = new Lenis({ duration: 1.5, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
 function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
 requestAnimationFrame(raf);

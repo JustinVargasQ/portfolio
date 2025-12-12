@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portafolio de Justin Vargas Quirós - Ingeniería en Tecnologías de Información. Proyectos de desarrollo web, infraestructura y seguridad.">
     <title>Portafolio | Justin Vargas Quirós</title>
+
+    <link rel="icon" type="image/jpeg" href="imgs/perf.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,15 +30,8 @@
     <div class="scroll-progress-bar"></div>
 
     <nav>
-        <div class="nav-logo">JUSTIN VARGAS Q.</div>
-
-        <div class="nav-right">
-            <div class="nav-links">
-                <a href="#perfil" data-translate="nav_profile">Perfil</a>
-                <a href="#competencias" data-translate="nav_skills">Competencias</a>
-                <a href="#experiencia" data-translate="nav_projects">Proyectos</a>
-                <a href="#contacto" style="color: var(--accent);" data-translate="nav_hire">Contratar</a>
-            </div>
+        <div class="nav-top-row">
+            <div class="nav-logo">JUSTIN VARGAS Q.</div>
 
             <div class="controls">
                 <div class="language-toggle" id="lang-toggle" title="Cambiar idioma / Switch Language">
@@ -51,6 +48,13 @@
                     <i class="ri-sun-line" id="theme-icon"></i>
                 </button>
             </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#perfil" data-translate="nav_profile">Perfil</a>
+            <a href="#competencias" data-translate="nav_skills">Competencias</a>
+            <a href="#experiencia" data-translate="nav_projects">Proyectos</a>
+            <a href="#contacto" style="color: var(--accent);" data-translate="nav_hire">Contratar</a>
         </div>
     </nav>
 
@@ -89,24 +93,19 @@
                         <div class="info-content">
                             <div>
                                 <h4>Justin Vargas Quirós</h4>
-
                                 <div class="info-tag-line">
                                     <span class="info-tag"><i class="ri-map-pin-line"></i> Roble, Puntarenas</span>
                                     <span class="info-tag">
-                                        <i class="ri-translate-2-line"></i>
-                                        B1+/B2
-                                        <span class="source">(INA)</span>
+                                        <i class="ri-translate-2-line"></i> B1+/B2 <span class="source">(INA)</span>
                                     </span>
                                 </div>
                             </div>
-
                             <div class="contact-block">
                                 <h5><i class="ri-mail-line"></i> <span data-translate="card_contact">Contacto</span>
                                 </h5>
                                 <p>justinvargas4299@gmail.com</p>
                                 <p style="font-size: 0.8rem; color: var(--text-secondary);">juvargasqu@est.utn.ac.cr</p>
                             </div>
-
                             <div class="academic-block">
                                 <h5><i class="ri-graduation-cap-line"></i> <span data-translate="card_status">Estado
                                         Académico</span></h5>
@@ -137,36 +136,28 @@
 
         <div class="tech-grid">
             <div class="tech-card reveal-element">
-                <i class="ri-html5-fill"></i>
-                <span data-translate="skill_web">Desarrollo Web</span>
+                <i class="ri-html5-fill"></i> <span data-translate="skill_web">Desarrollo Web</span>
             </div>
             <div class="tech-card reveal-element">
-                <i class="ri-code-s-slash-line"></i>
-                <span data-translate="skill_logic">Lógica & Algoritmos</span>
+                <i class="ri-code-s-slash-line"></i> <span data-translate="skill_logic">Lógica & Algoritmos</span>
             </div>
             <div class="tech-card reveal-element">
-                <i class="ri-database-2-fill"></i>
-                <span data-translate="skill_db">Gestión de BD</span>
+                <i class="ri-database-2-fill"></i> <span data-translate="skill_db">Gestión de BD</span>
             </div>
             <div class="tech-card reveal-element">
-                <i class="ri-smartphone-line"></i>
-                <span data-translate="skill_mobile">Desarrollo Móvil</span>
+                <i class="ri-smartphone-line"></i> <span data-translate="skill_mobile">Desarrollo Móvil</span>
             </div>
             <div class="tech-card reveal-element">
-                <i class="ri-server-line"></i>
-                <span data-translate="skill_infra">Redes & Infraestructura</span>
+                <i class="ri-server-line"></i> <span data-translate="skill_infra">Redes & Infraestructura</span>
             </div>
             <div class="tech-card reveal-element">
-                <i class="ri-shield-check-line"></i>
-                <span data-translate="skill_security">Ciberseguridad</span>
+                <i class="ri-shield-check-line"></i> <span data-translate="skill_security">Ciberseguridad</span>
             </div>
             <div class="tech-card reveal-element">
-                <i class="ri-team-line"></i>
-                <span>Scrum / Agile</span>
+                <i class="ri-team-line"></i> <span>Scrum / Agile</span>
             </div>
             <div class="tech-card reveal-element">
-                <i class="ri-cloud-line"></i>
-                <span>Cloud Computing</span>
+                <i class="ri-cloud-line"></i> <span>Cloud Computing</span>
             </div>
         </div>
     </section>
@@ -188,18 +179,16 @@
                 </div>
                 <p data-translate="p1_desc">Implementación de una solución web completa integrando frontend y backend,
                     aplicando ingeniería de requerimientos y conexión a bases de datos relacionales.</p>
-
                 <div class="tech-stack-mini">
                     <span class="mini-tag">Web Systems</span>
                     <span class="mini-tag">DB SQL</span>
                     <span class="mini-tag">Requerimientos</span>
                 </div>
-
                 <div class="project-links-container">
-                    <a href="#" target="_blank" class="prj-btn demo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="prj-btn demo">
                         <i class="ri-external-link-line"></i> <span data-translate="btn_demo">Ver Demo</span>
                     </a>
-                    <a href="#" target="_blank" class="prj-btn repo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="prj-btn repo">
                         <i class="ri-github-fill"></i> <span data-translate="btn_code">Código</span>
                     </a>
                 </div>
@@ -212,18 +201,16 @@
                 </div>
                 <p data-translate="p2_desc">Diseño e implementación de una red empresarial escalable, incluyendo
                     configuración de servidores, virtualización y enrutamiento seguro.</p>
-
                 <div class="tech-stack-mini">
                     <span class="mini-tag">Virtualización</span>
                     <span class="mini-tag">Redes</span>
                     <span class="mini-tag">Cloud</span>
                 </div>
-
                 <div class="project-links-container">
-                    <a href="#" target="_blank" class="prj-btn demo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="prj-btn demo">
                         <i class="ri-external-link-line"></i> <span data-translate="btn_demo">Ver Demo</span>
                     </a>
-                    <a href="#" target="_blank" class="prj-btn repo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="prj-btn repo">
                         <i class="ri-github-fill"></i> <span data-translate="btn_code">Código</span>
                     </a>
                 </div>
@@ -236,18 +223,16 @@
                 </div>
                 <p data-translate="p3_desc">Desarrollo avanzado utilizando metodologías ágiles. Integración de
                     aplicaciones móviles, bases de datos avanzadas y principios de seguridad.</p>
-
                 <div class="tech-stack-mini">
                     <span class="mini-tag">Mobile Apps</span>
                     <span class="mini-tag">Seguridad TI</span>
                     <span class="mini-tag">Agile/Scrum</span>
                 </div>
-
                 <div class="project-links-container">
-                    <a href="#" target="_blank" class="prj-btn demo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="prj-btn demo">
                         <i class="ri-external-link-line"></i> <span data-translate="btn_demo">Ver Demo</span>
                     </a>
-                    <a href="#" target="_blank" class="prj-btn repo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="prj-btn repo">
                         <i class="ri-github-fill"></i> <span data-translate="btn_code">Código</span>
                     </a>
                 </div>
